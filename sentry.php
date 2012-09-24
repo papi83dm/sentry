@@ -522,6 +522,9 @@ class Sentry
 			Config::get('sentry::sentry.remember_me.cookie_name'),
 			$cookie_string,
 			Config::get('sentry::sentry.remember_me.expire')
+			Config::get('sentry::sentry.remember_me.cookie_path'),
+                        Config::get('sentry::sentry.remember_me.cookie_domain')
+
 		);
 
 		return $cookie_pass;
